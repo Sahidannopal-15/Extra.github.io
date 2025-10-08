@@ -8,18 +8,12 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-900: oklch(39.6% 0.141 25.723);
-    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-neutral-300: oklch(87% 0 0);
-    --color-neutral-700: oklch(37.1% 0 0);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-7xl: 80rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -36,7 +30,6 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --tracking-wide: 0.025em;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -222,14 +215,8 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
-  }
-  .block {
-    display: block;
   }
   .flex {
     display: flex;
@@ -240,14 +227,8 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
   }
   .h-\[330px\] {
     height: 330px;
@@ -258,12 +239,6 @@
   .h-screen {
     height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-1\/3 {
-    width: calc(1/3 * 100%);
-  }
   .w-\[330px\] {
     width: 330px;
   }
@@ -273,26 +248,14 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
-  }
-  .items-end {
-    align-items: flex-end;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -309,29 +272,12 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .space-y-6 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
-  .space-y-10 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
   .space-y-16 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 16) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-y-reverse)));
     }
-  }
-  .self-center {
-    align-self: center;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -350,9 +296,6 @@
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
-  .border-transparent {
-    border-color: transparent;
-  }
   .border-white {
     border-color: var(--color-white);
   }
@@ -365,41 +308,20 @@
       background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
     }
   }
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
-  }
   .bg-transparent {
     background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\/Photo\/4761426-uhd_4096_2160_25fps\.mp4\'\)\] {
-    background-image: url('../Photo/4761426-uhd_4096_2160_25fps.mp4');
+  .bg-\[url\(\'\.\/Photo\/dumbbell-1966247_1280\.jpg\'\)\] {
+    background-image: url('./Photo/dumbbell-1966247_1280.jpg');
   }
-  .bg-\[url\(\'\.\.\/Photo\/DUMPbell\.jpg\'\)\] {
-    background-image: url('../Photo/DUMPbell.jpg');
+  .bg-\[url\(\'\.\/Photo\/pexels-69035116-8328775\.jpg\'\)\] {
+    background-image: url('./Photo/pexels-69035116-8328775.jpg');
   }
-  .bg-\[url\(\'\.\.\/Photo\/dumbbell-1966247_1280\.jpg\'\)\] {
-    background-image: url('../Photo/dumbbell-1966247_1280.jpg');
-  }
-  .bg-\[url\(\'\.\.\/Photo\/pexels-69035116-8328775\.jpg\'\)\] {
-    background-image: url('../Photo/pexels-69035116-8328775.jpg');
-  }
-  .bg-\[url\(\'\.\.\/Photo\/pexels-anastasia-shuraeva-4944435\.jpg\'\)\] {
-    background-image: url('../Photo/pexels-anastasia-shuraeva-4944435.jpg');
-  }
-  .bg-\[url\(\'\.\.\/Photo\/thunderbolt-1905603_1280\.png\'\)\] {
-    background-image: url('../Photo/thunderbolt-1905603_1280.png');
-  }
-  .bg-\[url\(\'\.\.\/Photo\/thunderbolt-1905603_1280\.png\.jpg\'\)\] {
-    background-image: url('../Photo/thunderbolt-1905603_1280.png.jpg');
-  }
-  .bg-\[url\(\'\.\.\/Photo\\pexels-69035116-8328775\.jpg\'\)\] {
-    background-image: url('../Photo\pexels-69035116-8328775.jpg');
-  }
-  .bg-\[url\(\'\/Photo\/thunderbolt-1905603_1280\.png\.jpg\'\)\] {
-    background-image: url('/Photo/thunderbolt-1905603_1280.png.jpg');
+  .bg-\[url\(\'\.\/Photo\/pexels-anastasia-shuraeva-4944435\.jpg\'\)\] {
+    background-image: url('./Photo/pexels-anastasia-shuraeva-4944435.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -428,12 +350,6 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
-  }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
-  }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
@@ -442,12 +358,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-left {
-    text-align: left;
-  }
-  .text-right {
-    text-align: right;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -464,10 +374,6 @@
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -511,16 +417,8 @@
   .underline-offset-4 {
     text-underline-offset: 4px;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .backdrop-blur {
     --tw-backdrop-blur: blur(8px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -646,11 +544,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -759,7 +652,6 @@
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
